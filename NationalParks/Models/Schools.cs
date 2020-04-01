@@ -10,8 +10,8 @@ namespace NationalParks.Models
     public class School
     {
         public string name { get; set; }
-        public int size { get; set; }
-        public int id { get; set; }
+        public string size { get; set; }
+        public string id { get; set; }
     }
 
 
@@ -19,8 +19,8 @@ namespace NationalParks.Models
     {
         public string total { get; set; }
         public List<School> data { get; set; }
-        public int page { get; set; }
-        public int per_page { get; set; }
+        public string page { get; set; }
+        public string per_page { get; set; }
     }
 
 }

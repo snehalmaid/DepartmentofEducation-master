@@ -20,15 +20,11 @@ namespace NationalParks.Controllers
         public IActionResult Schools()
         {
             APIHandler webHandler = new APIHandler();
-            Schools schools = GetSchools(webHandler);
+            Schools schools = webHandler.GetSchools(); ;
 
-            return View(Schools);
+            return View(schools);
         }
 
-        private static Schools GetSchools(APIHandler webHandler)
-        {
-            return webHandler.Schools;
-        }
 
         private IActionResult View(Func<IActionResult> schools)
         {

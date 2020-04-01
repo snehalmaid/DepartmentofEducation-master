@@ -16,7 +16,6 @@ namespace NationalParks.APIHandlerManager
     static string BASE_URL = "https://api.data.gov/ed/collegescorecard/v1/";
     static string API_KEY = "hqMu8gow4OMUHkB2aTsPkYbtuz6gVoM0veNCl0TD"; //Add your API key here inside ""
 
-        internal Schools Schools => throw new NotImplementedException();
 
         HttpClient httpClient;
 
